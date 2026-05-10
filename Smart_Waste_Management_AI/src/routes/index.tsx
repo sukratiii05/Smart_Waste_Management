@@ -41,7 +41,7 @@ function DashboardPage() {
   const [bins, setBins] = useState<Bin[]>([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bins")
+    fetch("https://smartwastemanagement-production.up.railway.app/bins")
       .then((res) => res.json())
       .then((data) => setBins(data))
       .catch((err) => console.error(err));

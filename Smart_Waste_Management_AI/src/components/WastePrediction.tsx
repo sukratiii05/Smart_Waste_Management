@@ -65,7 +65,7 @@ export function WastePrediction({ imageFile }: { imageFile: File }) {
         setConfidence(conf);
 
         // ✅ BACKEND CALL (CORRECT PLACE)
-        await fetch("http://localhost:5000/waste", {
+        await fetch("https://smartwastemanagement-production.up.railway.app/waste", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
