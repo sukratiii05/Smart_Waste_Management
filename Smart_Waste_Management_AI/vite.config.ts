@@ -4,11 +4,11 @@ export default defineConfig({
   vite: {
     server: {
       host: "0.0.0.0",
-      allowedHosts: ["insightful-flow-production.up.railway.app"],
+      allowedHosts: true,
     },
     preview: {
       host: "0.0.0.0",
-      allowedHosts: ["insightful-flow-production.up.railway.app"],
+      allowedHosts: true,
     },
   },
 });
